@@ -26,7 +26,7 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/nginx:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/nginx:latest ./public
 
       - name: Push the Docker image
         run: |
